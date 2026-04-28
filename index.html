@@ -22,7 +22,7 @@
             </section>
             <!-- pergunta 1: multiplas escolhas -->
             <section>
-                <h2>Qual é a linguagem usada para estruturação de páginas web?</h2>
+                <h2>Pergunta 1: Qual é a linguagem usada para estruturação de páginas web?</h2>
                 <form> <!-- organizar corretamente o imput do usuário-->
                     <input type="radio" value="Python" id="p1a" name="pergunta1">
                     <label for="p1a">Python</label> <br>
@@ -83,7 +83,7 @@
             </section>
             <!-- pergunta7: menu suspenso-->
             <section>
-                <h2>Pergunta 7:Selecione o atributo do input que define o seu tipo:</h2>
+                <h2>Pergunta 7: Selecione o atributo do input que define o seu tipo:</h2>
                 <form>
                     <select name="pergunta7" id="p7">
                         <option value=""></option>
@@ -95,12 +95,61 @@
             </section>
             <!-- pergunta 8: imagem -->
             <section>
-                    <h2>Qual é a linguagem que está sendo representada pela imagem a seguir?</h2>
+                    <h2>Pergunta 8: Qual é a linguagem que está sendo representada pela imagem a seguir?</h2>
                     <figure>
                     <img src="./imagens/Python-logo-notext.png" alt="logotipo de uma imagem de programação" width="200"> <br> <!-- alt é para mostrar um texto caso a imagem não carregue, width é para definir a largura da imagem -->
                     <figcaption>Logotipo de uma linguagem de programação</figcaption>
                     </figure>
                     <input type="text" id="p8" name="pergunta8" placeholder="Digite aqui a resposta...">
+            </section>
+            <!--tabela de pontuação-->
+            <section>
+                <h2>Tabela de pontuação</h2>
+                <table border="2"> <!-- table é para criar uma tabela, border é para definir a borda da tabela -->
+                    <thead> <!-- thead é para organizar o cabeçalho da tabela, é opcional -->
+                        <tr> <!-- tr é para criar uma linha na tabela -->
+                            <th>Pontuação</th> <!-- th é para criar uma célula de cabeçalho, é para destacar o texto -->
+                            <th>Avaliação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0-2</td> <!-- td é para criar uma célula de dados, é para organizar o conteúdo da tabela -->
+                            <td>Não desista! Seus erros são uma oportunidade de saber onde melhorar</td>
+                        </tr>
+                        <tr>
+                            <td>2-4</td>
+                            <td>Você tem potêncial! Continue se estudando para melhorar</td>
+                        </tr>
+                        <tr>
+                            <td>4-6</td>
+                            <td>Uau! Você é quase um mestre</td>
+                        </tr>
+                        <tr>
+                            <td>6-8</td>
+                            <td>Você é realmente diferente, hein?</td>
+                        </tr> 
+                        <tfoot>
+                            <tr>
+                                <td colspan="2"> Lembre-se de continuar estudando para estar sempre aprimorando seus conhecimentos </td> <!-- colspan é para unir duas ou mais células -->
+                            </tr>
+                        </tfoot> <!-- tfoot é para organizar o rodapé da tabela, é opcional -->
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h2>Gabarito do quiz</h2>
+                <ul> <!-- ul é para criar uma lista não numerada-->
+                    <li>Pergunta 1: HTML</li> <!-- li é para criar um item da lista -->
+                    <li>Pergunta 2: Domínio</li>
+                    <li>Pergunta 3: Bob@o123doPed@ç0</li>
+                    <li>Pergunta 4: 1991</li>
+                    <li>Pergunta 5: JavaScript e Java</li>
+                    <li>Pergunta 6: O arquivo deve ter extensão .html</li>
+                    <li>Pergunta 7: type</li>
+                    <li>Pergunta 8: Python</li>
+                </ul>
+                <!-- ol cria listas numeradas-->
             </section>
 
 
