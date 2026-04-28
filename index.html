@@ -18,7 +18,7 @@
                 <p>Sua dificuldade <em>aumenta</em> conforme você avança nas perguntas.</p> <!-- <em> é um destaque mais suave comparado a <strong>, deixa em italico -->
                 <p>Disponível para todos os níveis de conhecimento.</p>
                 <p>Desafio rápido e simples. <br> Tente agora! </p> <!-- <br> é pra quebrar a linha -->
-                <p>Há a presença de acrônimos como <abbr title="JavaScript">JS</abbr> e <abbr title="HyperTest Markup Language">HTML</abbr></p> <!-- <abbr> é para criar uma abreviação, o atributo title é para mostrar o significado quando o mouse passar por cima -->
+                <p>Há a presença de <abbr title="siglas">acrônimos</abbr> como <abbr title="JavaScript">JS</abbr> e <abbr title="HyperTest Markup Language">HTML</abbr></p> <!-- <abbr> é para criar uma abreviação, o atributo title é para mostrar o significado quando o mouse passar por cima -->
             </section>
             <!-- pergunta 1: multiplas escolhas -->
             <section>
@@ -45,22 +45,67 @@
                 </form>
             </section>
             <!-- pergunta 3: senha -->
-             <section>
+            <section>
                 <h2>Pergunta 3: Escreva um exemplo de senha forte:</h2>
                 <form>
                     <input type="password" id="p3" name="pergunta3"
                 placeholder="Digite aqui...">
                 </form>
-             </section>
+            </section>
+            <!-- pergunta 4: data -->
+            <section> 
+                <h2>PErgunta 4: Em que ano foi publicada a primeira versão do HTML?</h2>
+                <form>
+                     <input type="date" id="p4" name="pergunta4">
+                </form>
+            </section>
+            <!-- pergunta 5: multipla seleção -->
+            <section>
+                <h2>Pergunta 5: Quais dessas tecnologias são consideradas linguagens de programação?</h2>
+                <form>
+                    <input type="checkbox" id="p5a" name="pergunta5" value="Python">
+                    <label for="p1a">Python</label> <br>
+                    <input type="checkbox" id="p5b" name="pergunta5" value="Java">
+                    <label for="p1b">Java</label> <br>
+                    <input type="checkbox" id="p5c" name="pergunta5" value="JavaScript">
+                    <label for="p1c">JavaScript</label> <br>
+                    <input type="checkbox" id="p5d" name="pergunta5" value="HTML">
+                    <label for="p1d">HTML</label> <br>
+
+                </form>
+            </section>
+            <!-- pergunta 6: upload de arquivo -->
+            <section>
+                <h2>Pergunta 6: Faça o upload de um arquivo contendo um código HTML</h2>
+                <form>
+                    <input type="file" id="p6" name="pergunta6">
+                </form>
+            </section>
+            <!-- pergunta7: menu suspenso-->
+            <section>
+                <h2>Pergunta 7:Selecione o atributo do input que define o seu tipo:</h2>
+                <form>
+                    <select name="pergunta7" id="p7">
+                        <option value=""></option>
+                        <option value="id">id</option>
+                        <option value="text">text</option>
+                        <option value="password">password</option>
+                    </select>
+                </form>
+            </section>
+            <!-- pergunta 8: imagem -->
+            <section>
+                    <h2>Qual é a linguagem que está sendo representada pela imagem a seguir?</h2>
+                    <figure>
+                    <img src="./imagens/Python-logo-notext.png" alt="logotipo de uma imagem de programação" width="200"> <br> <!-- alt é para mostrar um texto caso a imagem não carregue, width é para definir a largura da imagem -->
+                    <figcaption>Logotipo de uma linguagem de programação</figcaption>
+                    </figure>
+                    <input type="text" id="p8" name="pergunta8" placeholder="Digite aqui a resposta...">
+            </section>
+
 
         </main>
         <footer></footer>
     </body>
-
-
-
-
-
-
 
 </html> <!-- essencial -->
