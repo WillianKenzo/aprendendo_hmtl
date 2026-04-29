@@ -154,10 +154,30 @@
                 </details>
                 <!-- ol cria listas numeradas-->
             </section>
+            <section> 
+                <h2>Obrigado pela participação! Deixe seu feedback para que possamos melhorar o quiz cada vez mais!</h2>
+                <form>
+                    <fieldset>
+                        <legend>Informações para contato</legend> <!-- legend é para dar um título pro fieldset-->
+                    <label for="name">Nome:</label> <!-- label tem melhor acessibilidade e cria um campo pra preencher-->
+                    <input type="text" id="name" name="name"> <br>
 
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"> <br>
+
+                    <label for="text">Feedback:</label> <br>
+                    <textarea id="feedback" name="feedback" rows="5" cols="50" placeholder="Deixe seu feedback aqui..."></textarea> <br> <!-- textarea é para criar uma área de texto, rows é de linhas e cols de coluna-->
+                    <button onclick="alert('Feedback enviado. Obrigado!')">Enviar</button>
+                    </fieldset> <!-- fieldset cria uma borda envolta do conteúdo dentro dele--> 
+
+                </form>
+            </section>
 
         </main>
-        <footer></footer>
+        <footer>
+            <p>&copy; 2026 Quiz para programadores. Todos os direitos reservados.</p> <!-- &copy; é para criar o símbolo de copyright -->
+            <p>Para conhecer mais sobre o criador <a href="seila.html" target="_blank">clique aqui</a></p> <!-- <a> é para criar um link, href é o endereço do link, e target="_blank" é para abrir o link em uma nova aba -->
+        </footer>
     </body>
 
 </html> <!-- essencial -->
